@@ -1,4 +1,4 @@
-# import pymongo.mongo_client
+import pymongo.mongo_client
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
 
@@ -7,6 +7,8 @@ from networksecurity.logging.logger import logging
 
 from networksecurity.entity.config_entity import DataIngestionConfig
 from networksecurity.entity.artifact_entity import DataIngestionArtifact
+
+
 
 import os
 import sys
@@ -102,3 +104,7 @@ class DataIngestion:
             return dataingestionartifact
         except Exception as e:
             raise NetworkSecurityException
+        
+
+
+
